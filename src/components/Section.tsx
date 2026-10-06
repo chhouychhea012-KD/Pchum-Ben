@@ -1,0 +1,2 @@
+import { Box, Stack, Typography } from "@mui/material";
+export function SectionHeader({eyebrow,title,action}:{eyebrow?:string;title:string;action?:React.ReactNode}) { return <Stack direction="row" sx={{alignItems:"end",justifyContent:"space-between",gap:2,mb:2}}><Box>{eyebrow&&<Typography variant="overline" color="secondary.main" sx={{fontWeight:800}}>{eyebrow}</Typography>}<Typography variant="h5" sx={{fontWeight:800}}>{title}</Typography></Box>{action}</Stack> }
